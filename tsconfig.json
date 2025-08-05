@@ -5,6 +5,14 @@
     { "path": "./tsconfig.vite.json" }
   ],
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "layouts/*": ["./app/layouts/*"],
+      "assets/*": ["./app/assets/*"],
+      "controllers/*": ["./app/controllers/*"],
+      "routes/*": ["./app/routes/*"],
+      "files/*": ["./files/"],
+    },
     "checkJs": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,

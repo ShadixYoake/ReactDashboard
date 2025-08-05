@@ -1,0 +1,171 @@
+@import "./styles.css";
+
+
+.centered-container {
+    margin-top: 20px;
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.leftMargin {
+    margin-left: 15px;
+}   
+
+.bigHeader {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #b3292d;
+    margin: 0 0 20px 15px;
+}
+
+.white-box {
+    margin: 0 15% 25px 15%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #686867bd !important;
+    box-shadow: 5px 6px 5px #686867bd;
+}
+
+.white-box input {
+    margin: 5px 0 30px 25px;
+}
+
+.white-box input[type='file'] {
+    display: none;
+}
+
+#select-file-btn {
+    margin: 0 0 0 25px;
+}
+
+.select-file-container{
+    width: 100%;
+    margin: 22px 0px 40px;
+}
+
+.white-box .bold {
+    font-weight: bold;
+}
+
+.white-box input:not(.select-file) {
+    border: 2px solid #686867 !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.white-box .labels-container {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.white-box .labels-container label {
+    margin: 5px 15px;
+}
+
+.search-box{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.white-box table{
+    border-collapse: collapse;
+    border: 1px solid #b3292d;
+}
+
+.white-box table thead, th, thead tr{
+    background-color: #b3292d;
+    color: white;
+    padding: 10px;
+}
+
+.white-box thead tr th :hover{
+    background-color: #b3292d;
+}
+
+.white-box table tbody, tr td{
+    border: 1px solid #b3292d;
+    padding: 10px;
+    background-color: #ffffff;
+    transition: 1s;
+}
+
+.white-box table tbody tr:nth-child(odd) td{
+    background-color: #ffc3c3;
+}
+
+/*
+.nav-bar {
+    padding: 0px 15% 0px 15%;
+    display: flex;
+    min-width: 100vw;
+    background: #ffffff;
+    justify-content: space-between;
+    gap: 5px;
+    padding-right: 5%;
+    border-bottom: 1px solid #686867 !important;
+}
+
+.nav-bar img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.nav-bar a {
+    height: 100px;
+    margin: 20px 10px 0px 20px;
+    padding-bottom: 20px;
+    align-content: center;
+    color: #686867bd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover:not(:has(img)) {
+    color: #000000;
+    border-bottom: 1px solid #686867 !important;
+}
+
+.nav-bar .user-space label {
+    margin-right: 40x;
+    align-self: center;
+}
+
+.nav-bar a:hover {
+    color: #000000;
+}
+
+.nav-bar .user-space {
+    margin: 20px auto 0% 20%;
+    padding-bottom: 20px;
+    align-content: center;
+    width: auto;
+    height: 100px;
+}
+
+.view-name {
+    padding: 2vh 15px 2vh 15%;
+    display: flex;
+    min-width: 100vw;
+    background: #ffffff;
+    justify-content: space-between;
+    gap: 5px;
+    padding-right: 5%;
+    border-bottom: 1px solid #686867 !important;
+    color: #b3292d;
+}
+
+.view-name h1 {
+    padding-left: 30px;
+}
+*/

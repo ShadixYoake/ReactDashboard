@@ -1,0 +1,109 @@
+.nav-bar {
+    padding: 0px 15% 0px 15%;
+    display: flex;
+    min-width: 100vw;
+    background: #ffffff;
+    justify-content: space-between;
+    gap: 5px;
+    padding-right: 5%;
+    border-bottom: 1px solid #686867 !important;
+}
+
+.nav-bar img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.nav-bar a {
+    height: 100px;
+    margin: 20px 10px 0px 20px;
+    padding-bottom: 20px;
+    align-content: center;
+    color: #686867bd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover:not(:has(img)) {
+    color: #000000;
+    border-bottom: 1px solid #686867 !important;
+}
+
+.nav-bar .user-space label {
+    margin-right: 40x;
+    align-self: center;
+}
+
+.nav-bar a:hover {
+    color: #000000;
+}
+
+.nav-bar .user-space {
+    margin: 20px auto 0% 20%;
+    padding-bottom: 20px;
+    align-content: center;
+    width: auto;
+    position: relative;
+    display: inline-block;
+    height: 100px;
+}
+
+.view-name {
+    padding: 2vh 15px 2vh 15%;
+    display: flex;
+    min-width: 100vw;
+    background: #ffffff;
+    justify-content: space-between;
+    gap: 5px;
+    padding-right: 5%;
+    border-bottom: 1px solid #686867 !important;
+    color: #b3292d;
+}
+
+.view-name h1 {
+    padding-left: 30px;
+}
+
+.user-space{
+  display: flex;
+  justify-self: flex-end;
+}
+
+.user-space span {
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.user-space span:hover {
+    background-color: #b3292d;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.dropdown-content {
+    display: grid;
+    visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-top: 10px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border-radius: 0 0 10px 10px ;
+
+}
+
+.dropdown-content a {
+    max-height: 40px;
+    margin: 0px 5px;
+    padding: 0px 5px;
+}
+
+.dropdown-starter:hover .dropdown-content {
+    visibility: visible;
+    opacity: 100;
+}

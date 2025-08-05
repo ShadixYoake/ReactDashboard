@@ -1,0 +1,32 @@
+@import "../../../views-components.css";
+
+/* Input y botón */
+.white-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+#w-alt1 {
+  padding: 5px;
+}
+
+#alt-input1 {
+  width: 85%;
+  margin: 10px;
+  outline: 0;
+  transition: border 0.5s ease;
+}
+
+#alt-input1:focus {
+  border: 2px solid #b3292d;
+}
+
+.red-button {
+  width: 15%;
+  margin: 10px 5px;
+}

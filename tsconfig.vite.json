@@ -21,7 +21,13 @@
     "rootDirs": [".", "./.react-router/types"],
     "paths": {
       "~/database/*": ["./database/*"],
-      "~/*": ["./app/*"]
+      "~/*": ["./app/*"],
+      "layouts/*": ["./app/layouts/*"],
+      "assets/*": ["./app/assets/*"],
+      "controllers/*": ["./app/controllers/*"],
+      "routes/*": ["./app/routes/*"],
+      "database/*": ["./database/*"],
+      "files/*": ["./files/"],
     },
     "esModuleInterop": true,
     "resolveJsonModule": true

@@ -1,0 +1,86 @@
+@import "../../views-components.css";
+
+:root {
+  --red-main: #b3292d;
+  --gray-bg: #e5e6eb;
+  --white: rgb(255, 255, 255);
+}
+
+.red-button {
+  margin: 10px 5px;
+  width: 15%;
+}
+
+.collapse-view:not(:first-child) {
+  overflow: hidden;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.collapse-view input {
+  display: none;
+}
+
+.collapse-label {
+  position: relative;
+  font-weight: 600;
+  background: #b3292d;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1), 0 4px 11x 0 rgba(0, 0, 0, 0.8);
+  color: rgb(255, 255, 255);
+  display: block;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+input:checked ~ .collapse-label {
+  border-radius: 10px 10px 0 0;
+}
+
+.collapse-label:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  transition: 0.5s;
+  background: url(/assets/arrow-sm-right-svgrepo-com.svg) no-repeat 0 0;
+}
+
+input:checked ~ .collapse-label:after {
+  transform: rotate(90deg);
+}
+
+.collapse-text {
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 4px;
+  line-height: 1.4;
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+input:checked ~ .collapse-text {
+  max-height: 300px;
+  padding: 15px;
+  background: #e5e6eb;
+  box-shadow: 0 5px 0 rgba(51, 32, 32, 0.1), 0 4px 11x 0 rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  top: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.collapse-text p {
+  padding: 0 15px;
+}
+
+.collapse-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+}
